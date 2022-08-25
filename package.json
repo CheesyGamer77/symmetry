@@ -1,0 +1,40 @@
+{
+  "name": "symmetry",
+  "version": "0.0.1",
+  "description": "An HTTP and WebSocket API for Discord",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rimraf ./lib",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "postinstall": "husky install && yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheesyGamer77/symmetry.git"
+  },
+  "author": "CheesyGamer77",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CheesyGamer77/symmetry/issues"
+  },
+  "homepage": "https://github.com/CheesyGamer77/symmetry#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/ws": "^8.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ws": "^8.8.1"
+  }
+}
